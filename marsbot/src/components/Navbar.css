@@ -1,0 +1,22 @@
+nav {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  background-color: #d0c0b0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+li {
+  font-size: 25px;
+}
+items {
+  cursor: pointer;
+}
