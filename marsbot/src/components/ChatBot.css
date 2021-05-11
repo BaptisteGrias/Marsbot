@@ -1,36 +1,42 @@
 .chatbot-card {
-  background-color: rgba(249, 149, 132, 0.646);
+  background-color: rgba(9, 127, 244, 0.438);
+  width: 500px;
 }
 
 .human-input {
-  padding-left: 30vw;
-  padding-right: 30vw;
+  padding-left: 7rem;
+  padding-right: 7rem;
   margin: 10px;
 }
 
 #user-input {
-  background-color: rgba(27, 24, 24, 0.76);
-}
-
-#bot-reply {
-  background-color: rgba(231, 228, 228, 0.687);
-}
-
-#user-input,
-#bot-reply {
+  background-color: rgb(232,126,84);
   padding: 0.4rem;
   padding-left: 1rem;
-  border-radius: 10px;
+  margin-left: 5rem;
+  border-radius: 25px;
   text-align: left;
+  width: 10rem;
+}
+
+#bot-reply {
+  background-color: rgb(158, 123, 111);
+  padding: 0.4rem;
+  padding-left: 1rem;
+  border-radius: 25px;
+  text-align: left;
+  width: 10rem;
+  position: relative;
+  left: -220px;
 }
 
 .conversation-box {
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 
 .chatbox {
   overflow-y: scroll;
   overflow-y: auto;
-  height: 230px;
+  height: 300px;
 }
