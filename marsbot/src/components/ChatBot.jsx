@@ -19,8 +19,8 @@ export default function ChatBot() {
 
   const matchReply = (userInput) => {
     const trigger = [
-      ['hi', 'hey', 'hello'],
-      ['how are you', 'how are things', 'how you doing'],
+      ['bonjour', 'salut', 'hello'],
+      ['comment ça va ?', 'comment ca va', 'est ce que ça va ?'],
       ['what is going on', 'what is up'],
       ['happy', 'good', 'amazing', 'fantastic', 'cool'],
       ['bad', 'bored', 'tired', 'sad'],
@@ -29,8 +29,8 @@ export default function ChatBot() {
     ];
 
     const reply = [
-      ['Hello', 'Hi', "It's nice seeing you!"],
-      ["I'm doing good... how are you?", 'I feel kind of lonely, how are you?', 'I feel happy, how are you?'],
+      ['Bonjour Percy et Ginny !', 'Bonjour Percy et Ginny !', 'Bonjour Percy et Ginny !'],
+      ['Très bien et vous?', "Bien! Belle journée aujourd'hui", 'Oui ! Je suis contents de vous retrouver !'],
       ['Nothing much', 'Exciting things!', "I'm happy to see you!"],
       ['Glad to hear it', "Yayyy!! That's the spirit!"],
       ['There is always a rainbow after the rain!'],
@@ -38,7 +38,7 @@ export default function ChatBot() {
       ['Goodbye, it was a nice talk'],
     ];
 
-    const alternative = ['Same', 'Go on...', 'Try again please?', "I'm listening..."];
+    const alternative = ['Mais encore ...', 'Hein ??', "Applique toi s'il te plaît", "Je t'écoute..."];
 
     let botMsg = generateReply(trigger, reply, userInput);
 
@@ -65,7 +65,7 @@ export default function ChatBot() {
     <div className='chatbot-card'>
       <div className='human-input'>
         <InputGroup>
-          <Form.Control type='text' placeholder='Ask me something' value={userInput} onChange={handleChange} onKeyPress={onKeyUp} />
+          <Form.Control type='text' placeholder='Dites moi quelque chose !' value={userInput} onChange={handleChange} onKeyPress={onKeyUp} />
         </InputGroup>
       </div>
       <div className='chatbox'>
@@ -76,7 +76,7 @@ export default function ChatBot() {
             </div>
 
             <div id='user-input'>
-              <h3>Me: {userReply}</h3>
+              <h3>Moi: {userReply}</h3>
             </div>
           </div>
         ))}
