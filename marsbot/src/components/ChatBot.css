@@ -1,0 +1,36 @@
+.chatbot-card {
+  background-color: rgba(249, 149, 132, 0.646);
+}
+
+.human-input {
+  padding-left: 30vw;
+  padding-right: 30vw;
+  margin: 10px;
+}
+
+#user-input {
+  background-color: rgba(27, 24, 24, 0.76);
+}
+
+#bot-reply {
+  background-color: rgba(231, 228, 228, 0.687);
+}
+
+#user-input,
+#bot-reply {
+  padding: 0.4rem;
+  padding-left: 1rem;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.conversation-box {
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.chatbox {
+  overflow-y: scroll;
+  overflow-y: auto;
+  height: 230px;
+}
