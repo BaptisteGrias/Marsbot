@@ -1,38 +1,93 @@
+@font-face {
+  font-family: 'planet-komos';
+  src: url('https://www.dafont.com/fr/planet-kosmos.font');
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body {
+  background-image: url('https://images3.alphacoders.com/919/thumb-1920-919968.jpg');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Histoire {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  width: 65%;
+  justify-content: center;
+  font-size: 25px;
+  font-family: 'planet-kosmos';
+}
+.boxCenter2 {
+  display: flex;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+/*BoxCardPictures*/
+.BoxCardPictures {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.picture {
+  width: 30%;
+  height: auto;
+  border-radius: 10%;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.Background {
+  background-image: url('https://images3.alphacoders.com/919/thumb-1920-919968.jpg');
+  font-family: 'Nova Flat' cursive;
+}
+
+.button {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 4px;
+  position: relative;
+  background-color: #9d622b;
+  border: none;
+  color: black;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background: #9d622b;
+  box-shadow: 0px 2px 10px 5px rgb(255, 196, 0);
+  color: #000;
+}
+
+.button:after {
+  content: '';
+  background: #d87403;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.button:focus {
+  outline: 0;
 }
