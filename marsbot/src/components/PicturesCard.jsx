@@ -1,5 +1,6 @@
 import React from 'react';
 import PicturesList from './PicturesList';
+import './Pictures.css';
 
 const PicturesCard = ({ img_src, earth_date, id }) => (
   <>

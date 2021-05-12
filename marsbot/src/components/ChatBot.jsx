@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import './ChatBot.css';
+import Navbar from './Navbar';
 
 export default function ChatBot() {
   const [userInput, setUserInput] = useState('');
@@ -62,25 +63,38 @@ export default function ChatBot() {
   };
 
   return (
-    <div className='chatbot-card'>
-      <div className='human-input'>
-        <InputGroup>
-          <Form.Control type='text' placeholder='Ask me something' value={userInput} onChange={handleChange} onKeyPress={onKeyUp} />
-        </InputGroup>
-      </div>
-      <div className='chatbox'>
-        {userHistory.map((userReply, indx) => (
-          <div className='conversation-box'>
-            <div id='bot-reply'>
-              <h3>Robot: {botHistory[indx]}</h3>
-            </div>
+    <>
+      <Navbar />
+      <p className="story">
+        Bienvenue à toi terrien nous somme heureux de t'avoir parmis mis nous.
+        <br />
+        depuis nôtre arrivé sur mars nous avons fait beaucoup de découverte,
+        <br /> mais depuis que nos comunication on été coupé nous nous sentons seul.
+        <br />
+        Nous avons crée cette appli et nous somme content que tu soit là. <br />
+        N'hésite pas a tchater avec nous.
+      </p>
+      <div className="chatbot-card">
+        <div className="human-input">
+          <InputGroup>
+            <Form.Control type="text" placeholder="Ask me something" value={userInput} onChange={handleChange} onKeyPress={onKeyUp} />
+          </InputGroup>
+        </div>
+        <div className="chatbox">
+          {userHistory.map((userReply, indx) => (
+            <div className="conversation-box">
+              <div id="bot-reply">
+                <h3>Percy&Ginny: {botHistory[indx]}</h3>
+              </div>
 
-            <div id='user-input'>
-              <h3>Me: {userReply}</h3>
+              <div id="user-input">
+                <h3>Me: {userReply}</h3>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+      <img className="imgMars2" src="./mars2.png" />
+    </>
   );
 }
