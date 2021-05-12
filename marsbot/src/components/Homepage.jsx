@@ -14,6 +14,9 @@ export default function HomePage() {
         <h1 className="title">Welcome to MarsBot</h1>
       </div>
       <img className="bgMars" src="./mars.png"></img>
+      <div className="Footer">
+        <h2></h2>
+      </div>
     </>
   );
 }

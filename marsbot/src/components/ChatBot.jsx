@@ -95,6 +95,9 @@ export default function ChatBot() {
         </div>
       </div>
       <img className="imgMars2" src="./mars2.png" />
+      <div className="Footer">
+        <h2></h2>
+      </div>
     </>
   );
 }
