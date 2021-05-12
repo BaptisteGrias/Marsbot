@@ -7,11 +7,11 @@ export default function Navbar() {
     <nav>
       <ul>
         <Link to="/">
-          <li className="items">HomePage 🌍 </li>
+          <li className="items">Accueil 🌍 </li>
         </Link>
 
         <Link to="ChatBot">
-          <li className="items">tchat with us 🤖 </li>
+          <li className="items">Tchat avec Nous 🤖 </li>
         </Link>
 
         <Link to="PicturesList">

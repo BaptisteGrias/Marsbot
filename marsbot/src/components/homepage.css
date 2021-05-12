@@ -1,4 +1,4 @@
-@import url('https://www.ffonts.net/EXP-FONT.font');
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
 
 .bgMars {
   background-image: cover;
@@ -24,7 +24,8 @@
 
 .title {
   position: absolute;
-  margin: 0%;
+  margin-top: 3%;
   font-size: 400%;
-  font-family: 'EXP-FONT', sans-serif, 'Times New Roman', Times, serif;
+  font-family: 'Goblin one', sans-serif, 'Times New Roman', Times, serif;
+  color: black;
 }
