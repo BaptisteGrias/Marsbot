@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import PicturesCard from './PicturesCard';
+import './Pictures.css';
+import axios from 'axios';
+import Navbar from './Navbar';
 
 export default function PicturesList() {
   const [pictures, setPictures] = useState([]);
@@ -19,22 +21,25 @@ export default function PicturesList() {
   }, []);
 
   return (
-    <div className="">
+    <div className="Background">
+      <Navbar />
       <div>
-        <div className="boxCenter2">
-          <p className="Histoire">
-            Nous ne sommes plus seul ! Je vous remercie d'être parmis nous ! Vous êtes arrivé ici grâce à ChatBot, mais nous avons un problème, en
-            effet après une panne d'huile et les batteries déchargées, nous n'avons pas été en mesure de pouvoir prendre des photos correctes. Cliquez
-            sur Suivant pour parcourir nos rushs en toute simplicité !
-          </p>
+        <div>
+          <div className="boxCenter2">
+            <p className="Histoire">
+              Nous ne sommes plus seul ! Je vous remercie d'être parmis nous ! Vous êtes arrivé ici grâce à MarsBot, mais nous avons un problème, en
+              effet après une panne d'huile et les batteries déchargées, nous n'avons pas été en mesure de pouvoir prendre des photos correctes.
+              Cliquez sur Suivant pour parcourir nos rushs en toute simplicité !
+            </p>
+          </div>
         </div>
+        <div className="BoxCardPictures">
+          <PicturesCard img_src={pictures.img_src} />
+        </div>
+        <button className="button" onClick={RequestPicturesAPI}>
+          Suivant !
+        </button>
       </div>
-      <div className="BoxCardPictures">
-        <PicturesCard img_src={pictures.img_src} />
-      </div>
-      <button className="button" onClick={RequestPicturesAPI}>
-        Suivant !
-      </button>
     </div>
   );
 }
