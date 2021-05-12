@@ -5,7 +5,7 @@
   border-radius: 10px;
   position: absolute;
   margin-top: 1%;
-  margin-left: 64%;
+  margin-left: 66%;
 }
 
 .human-input {
@@ -47,12 +47,4 @@
 .imgMars2 {
   height: 894px;
   width: 100%;
-}
-
-.story {
-  position: absolute;
-  font-size: 35px;
-  color: white;
-  margin-top: 6%;
-  margin-left: 3%;
 }
