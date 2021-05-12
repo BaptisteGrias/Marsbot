@@ -3,9 +3,20 @@
   src: url('https://www.dafont.com/fr/planet-kosmos.font');
 }
 
+.Footer {
+  border: solid 5px black;
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  height: 62px;
+  width: 100%;
+}
+
 .body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  position: relative;
 }
 
 .Histoire {
@@ -40,7 +51,7 @@
 .Background {
   height: 944px;
   background-image: url('https://images3.alphacoders.com/919/thumb-1920-919968.jpg');
-  font-family: 'Nova Flat' cursive;
+  font-family: 'Nova Flat' 'cursive';
 }
 
 .button {

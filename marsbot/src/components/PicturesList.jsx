@@ -40,6 +40,9 @@ export default function PicturesList() {
           Suivant !
         </button>
       </div>
+      <div className="Footer">
+        <h2></h2>
+      </div>
     </div>
   );
 }
