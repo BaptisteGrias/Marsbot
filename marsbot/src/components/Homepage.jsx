@@ -11,7 +11,7 @@ export default function HomePage() {
         <FaRobot className="robot" />
       </div>
       <div className="box">
-        <h1 className="title">Welcome to MarsBot</h1>
+        <h1 className="title">Bienvenue sur MarsBot</h1>
       </div>
       <img className="bgMars" src="./mars.png"></img>
     </>
