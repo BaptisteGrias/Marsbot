@@ -20,26 +20,24 @@ export default function ChatBot() {
 
   const matchReply = (userInput) => {
     const trigger = [
-      ['hi', 'hey', 'hello'],
-      ['how are you', 'how are things', 'how you doing'],
-      ['what is going on', 'what is up'],
-      ['happy', 'good', 'amazing', 'fantastic', 'cool'],
-      ['bad', 'bored', 'tired', 'sad'],
-      ['thanks', 'thank you'],
-      ['bye', 'good bye', 'goodbye'],
+      ['bonjour', 'salut', 'hello'],
+      ['comment ça va?', 'comment ca va?', 'est ce que ca va?'],
+      ["qu'est ce que tu fais?"],
+      ['tu proposes quoi?'],
+      ['merci', 'merci beaucoup', 'super'],
+      ['Salut', 'A bientôt', 'good bye'],
     ];
 
     const reply = [
-      ['Hello', 'Hi', "It's nice seeing you!"],
-      ["I'm doing good... how are you?", 'I feel kind of lonely, how are you?', 'I feel happy, how are you?'],
-      ['Nothing much', 'Exciting things!', "I'm happy to see you!"],
-      ['Glad to hear it', "Yayyy!! That's the spirit!"],
-      ['There is always a rainbow after the rain!'],
-      ["You're welcome", 'No problem', "It's my pleasure!"],
-      ['Goodbye, it was a nice talk'],
+      ['Bonjour Percy et Ginny', 'Bonjour Percy et Ginny', 'Bonjour Percy et Ginny'],
+      ['Très bien et vous?', "Bien, belle journée aujourd'hui.", 'Oui! Je suis content de vous retrouver!'],
+      ['Rien, comme vous...'],
+      ['Allez voir les clichés que vous avez pris'],
+      ['De rien.', 'Pas de problème.', 'Avec plaisir!'],
+      ["Au revoir, c'était un plaisir de parler avec vous!"],
     ];
 
-    const alternative = ['Same', 'Go on...', 'Try again please?', "I'm listening..."];
+    const alternative = ['Hein ?', 'Mais encore ?', "Essaie encore s'il te plaît?", "Je t'écoute..."];
 
     let botMsg = generateReply(trigger, reply, userInput);
 
@@ -65,38 +63,41 @@ export default function ChatBot() {
   return (
     <>
       <Navbar />
-      <p className="story">
-        Bienvenue à toi terrien nous somme heureux de t'avoir parmis mis nous.
-        <br />
-        depuis nôtre arrivé sur mars nous avons fait beaucoup de découverte,
-        <br /> mais depuis que nos comunication on été coupé nous nous sentons seul.
-        <br />
-        Nous avons crée cette appli et nous somme content que tu soit là. <br />
-        N'hésite pas a tchater avec nous.
-      </p>
       <div className="chatbot-card">
         <div className="human-input">
           <InputGroup>
-            <Form.Control type="text" placeholder="Ask me something" value={userInput} onChange={handleChange} onKeyPress={onKeyUp} />
+            <Form.Control type="text" placeholder="Dis-moi quelque chose" value={userInput} onChange={handleChange} onKeyPress={onKeyUp} />
           </InputGroup>
         </div>
         <div className="chatbox">
           {userHistory.map((userReply, indx) => (
             <div className="conversation-box">
               <div id="bot-reply">
-                <h3>Percy&Ginny: {botHistory[indx]}</h3>
+                <h3>Bot : {botHistory[indx]}</h3>
               </div>
 
               <div id="user-input">
-                <h3>Me: {userReply}</h3>
+                <h3>P&G : {userReply}</h3>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <img className="imgMars2" src="./mars2.png" />
+
+      <img className="imgMars2" src="./mars-14.png" />
+
       <div className="Footer">
-        <h2></h2>
+        <div className="col2">
+          <a href="https://fr-fr.facebook.com/" target="_blank">
+            <img src="facebook.png" alt="Facebook Icon" width="50px" height="50px" />
+          </a>
+          <a href="https://www.instagram.com/?hl=fr" target="_blank">
+            <img src="Insta.png" alt="Instagram Icon" width="50px" height="50px" />
+          </a>
+          <a href="https://twitter.com/?lang=fr" target="_blank">
+            <img src="twiter.png" alt="Twitter Icon" width="50px" height="50px" />
+          </a>
+        </div>
       </div>
     </>
   );

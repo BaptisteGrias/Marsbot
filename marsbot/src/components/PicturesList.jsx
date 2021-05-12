@@ -27,7 +27,7 @@ export default function PicturesList() {
         <div>
           <div className="boxCenter2">
             <p className="Histoire">
-              Nous ne sommes plus seul ! Je vous remercie d'être parmis nous ! Vous êtes arrivé ici grâce à MarsBot, mais nous avons un problème, en
+              Nous ne sommes plus seul ! Je vous remercie d'être parmis nous ! Vous êtes arrivés ici grâce à MarsBot, mais nous avons un problème, en
               effet après une panne d'huile et les batteries déchargées, nous n'avons pas été en mesure de pouvoir prendre des photos correctes.
               Cliquez sur Suivant pour parcourir nos rushs en toute simplicité !
             </p>
@@ -41,7 +41,17 @@ export default function PicturesList() {
         </button>
       </div>
       <div className="Footer">
-        <h2></h2>
+        <div className="col2">
+          <a href="https://fr-fr.facebook.com/" target="_blank">
+            <img src="facebook.png" alt="Facebook Icon" width="50px" height="50px" />
+          </a>
+          <a href="https://www.instagram.com/?hl=fr" target="_blank">
+            <img src="Insta.png" alt="Instagram Icon" width="50px" height="50px" />
+          </a>
+          <a href="https://twitter.com/?lang=fr" target="_blank">
+            <img src="twiter.png" alt="Twitter Icon" width="50px" height="50px" />
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -15,7 +15,17 @@ export default function HomePage() {
       </div>
       <img className="bgMars" src="./mars.png"></img>
       <div className="Footer">
-        <h2></h2>
+        <div className="col2">
+          <a href="https://fr-fr.facebook.com/" target="_blank">
+            <img src="facebook.png" alt="Facebook Icon" width="50px" height="50px" />
+          </a>
+          <a href="https://www.instagram.com/?hl=fr" target="_blank">
+            <img src="Insta.png" alt="Instagram Icon" width="50px" height="50px" />
+          </a>
+          <a href="https://twitter.com/?lang=fr" target="_blank">
+            <img src="twiter.png" alt="Twitter Icon" width="50px" height="50px" />
+          </a>
+        </div>
       </div>
     </>
   );
